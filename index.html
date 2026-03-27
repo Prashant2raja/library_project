@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Happy Birthday Suggi ❤️</title>
+    <meta name="description" content="A romantic birthday surprise page for Resham, filled with memories, shayari, heartfelt reasons, and a special celebration.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Happy Birthday Suggi">
+    <meta property="og:description" content="A romantic birthday surprise page made with love for Resham.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image/suggi1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Happy Birthday Suggi">
+    <meta name="twitter:description" content="A romantic birthday surprise page made with love for Resham.">
+    <meta name="twitter:image" content="image/suggi1.jpg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -20,7 +35,7 @@
 <body class="bg-romantic">
 
     <!-- Audio Element -->
-    <audio id="bgMusic" loop>
+    <audio id="bgMusic" loop preload="none">
         <source src="https://www.chosic.com/wp-content/uploads/2021/07/Rainy-Day-1.mp3" type="audio/mpeg">
     </audio>
 
@@ -39,10 +54,10 @@
         
         <!-- Mobile Optimized Navbar -->
         <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 glass-card px-8 py-3 flex gap-6 items-center shadow-2xl">
-            <a href="#hero" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-home text-xl"></i></a>
-            <a href="#gallery" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-images text-xl"></i></a>
-            <a href="#shayari" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-heart text-xl"></i></a>
-            <a href="#birthday" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-gift text-xl"></i></a>
+            <a href="#hero" aria-label="Go to home section" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-home text-xl"></i></a>
+            <a href="#gallery" aria-label="Go to gallery section" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-images text-xl"></i></a>
+            <a href="#shayari" aria-label="Go to shayari section" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-heart text-xl"></i></a>
+            <a href="#birthday" aria-label="Go to birthday section" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-gift text-xl"></i></a>
         </nav>
 
         <!-- Hero Section -->
@@ -65,91 +80,91 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi1.jpg" alt="Suggi 1">
+                            <img src="image/suggi1.jpg" alt="Suggi 1" loading="eager" fetchpriority="high" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">Purest Soul ✨</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi2.jpg" alt="Suggi 2">
+                            <img src="image/suggi2.jpg" alt="Suggi 2" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">My favorite smile 😍</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi3.jpg" alt="Suggi 3">
+                            <img src="image/suggi3.jpg" alt="Suggi 3" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">My happiness ❤️</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi4.jpg" alt="Suggi 4">
+                            <img src="image/suggi4.jpg" alt="Suggi 4" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">The way you look...</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi5.jpg" alt="Suggi 5">
+                            <img src="image/suggi5.jpg" alt="Suggi 5" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">MY Lab Lab</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi6.jpg" alt="Suggi 6">
+                            <img src="image/suggi6.jpg" alt="Suggi 6" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">lab lab</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi7.jpg" alt="Suggi 7">
+                            <img src="image/suggi7.jpg" alt="Suggi 7" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">Hehehe</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi8.jpg" alt="Suggi 8">
+                            <img src="image/suggi8.jpg" alt="Suggi 8" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi9.jpg" alt="Suggi 9">
+                            <img src="image/suggi9.jpg" alt="Suggi 9" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi10.jpg" alt="Suggi 10">
+                            <img src="image/suggi10.jpg" alt="Suggi 10" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi11.jpg" alt="Suggi 11">
+                            <img src="image/suggi11.jpg" alt="Suggi 11" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi12.jpg" alt="Suggi 12">
+                            <img src="image/suggi12.jpg" alt="Suggi 12" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi13.jpg" alt="Suggi 13">
+                            <img src="image/suggi13.jpg" alt="Suggi 13" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">Monkey suggi</p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi14.jpg" alt="Suggi 14">
+                            <img src="image/suggi14.jpg" alt="Suggi 14" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
                         </div>
                     </div>
                     <div class="swiper-slide image-slide px-4">
                         <div class="glass-card p-2">
-                            <img src="image/suggi15.jpg" alt="Suggi 15">
+                            <img src="image/suggi15.jpg" alt="Suggi 15" loading="lazy" decoding="async">
                             <p class="text-center py-4 text-pink-300 cursive text-2xl">Mehnati suggi</p>
                         </div>
                     </div>
@@ -246,6 +261,32 @@
             </div>
         </section>
 
+        
+        <!-- Virtual Birthday Cake Section -->
+        <section class="py-20 text-center px-6">
+            <h2 class="text-3xl font-light mb-12 text-pink-300">Make a Wish, Suggi ✨</h2>
+            <div id="cake-section" class="cake-container cursor-pointer">
+                <!-- SVG Cake -->
+                <svg viewBox="0 0 200 200" class="w-full h-full">
+                    <!-- Plate -->
+                    <ellipse cx="100" cy="150" rx="80" ry="20" fill="#333" />
+                    <!-- Cake Bottom -->
+                    <rect x="40" y="100" width="120" height="40" fill="#5d4037" rx="5" />
+                    <!-- Icing -->
+                    <rect x="40" y="80" width="120" height="25" fill="#f48fb1" rx="10" />
+                    <!-- Candle -->
+                    <rect id="candle" x="95" y="55" width="10" height="25" fill="#fff" />
+                    <!-- Flame -->
+                    <g id="cake-flame">
+                        <path d="M100 30 Q110 45 100 55 Q90 45 100 30" fill="#ff9d00">
+                            <animate attributeName="d" dur="0.2s" repeatCount="indefinite" values="M100 30 Q110 45 100 55 Q90 45 100 30;M100 28 Q115 45 100 55 Q85 45 100 28" />
+                        </path>
+                    </g>
+                </svg>
+                <div id="blow-hint" class="absolute -bottom-8 left-0 right-0 text-pink-400 font-bold animate-bounce">TAP TO BLOW CANDLE</div>
+            </div>
+        </section>
+
         <!-- Final Birthday Section -->
         <section id="birthday" class="py-32 text-center px-6">
             <div class="glass-card py-20 px-6 relative overflow-hidden border-pink-500/30">
@@ -284,6 +325,8 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+
 
 
 

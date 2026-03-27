@@ -1,3 +1,4 @@
+
 const giftTrigger = document.getElementById('gift-trigger');
         const entryScreen = document.getElementById('entry-screen');
         const mainContent = document.getElementById('main-content');
@@ -126,3 +127,22 @@ const giftTrigger = document.getElementById('gift-trigger');
             @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         `;
         document.head.appendChild(style);
+
+          // Cake Blowing Logic
+        document.getElementById('cake-section').addEventListener('click', () => {
+            const flame = document.getElementById('cake-flame');
+            const hint = document.getElementById('blow-hint');
+            
+            if (flame.style.display !== 'none') {
+                flame.style.display = 'none';
+                hint.innerText = "WISH GRANTED! ❤️";
+                hint.classList.remove('animate-bounce');
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.7 },
+                    colors: ['#f48fb1', '#ff4d6d', '#ffffff']
+                });
+            }
+        });
+

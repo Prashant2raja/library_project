@@ -136,7 +136,32 @@
             border-radius: 50%;
             transition: all 0.3s ease;
         }
+        
         .nav-item:active {
             background: rgba(255, 77, 109, 0.2);
             transform: scale(0.9);
         }
+
+        
+        /* Virtual Cake Styles */
+        .cake-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .flame {
+            width: 15px;
+            height: 25px;
+            background: #ff9d00;
+            border-radius: 50% 50% 20% 20%;
+            margin: 0 auto;
+            animation: flicker 0.1s infinite alternate;
+            filter: blur(1px);
+        }
+        @keyframes flicker {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1) rotate(2deg); }
+        }
+
+        
