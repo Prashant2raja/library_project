@@ -108,19 +108,6 @@
             .gallerySwiper .swiper-slide-active p {
                 font-size: 1.5rem;
             }
-
-            .why-love-grid {
-                max-width: 900px;
-                margin-left: auto;
-                margin-right: auto;
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 1.5rem;
-            }
-
-            .why-love-grid > .reveal-card:last-child {
-                grid-column: 1 / -1;
-            }
         }
 
         /* Typewriter Cursor */
