@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Suggi ❤️</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Swiper.js for Sliders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-romantic">
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.chosic.com/wp-content/uploads/2021/07/Rainy-Day-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Entry Screen Overlay -->
+    <div id="entry-screen" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black transition-all duration-1000">
+        <div class="text-center p-6">
+            <div id="gift-trigger" class="gift-box text-8xl mb-10">🎁</div>
+            <h1 class="text-2xl font-light text-pink-100 mb-2">A special surprise for...</h1>
+            <p class="text-pink-500 font-semibold tracking-widest text-lg animate-pulse">SUGGI ❤️</p>
+            <p class="text-gray-500 text-xs mt-12">(Tap the gift box)</p>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div id="main-content" class="min-h-screen relative">
+        
+        <!-- Mobile Optimized Navbar -->
+        <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 glass-card px-8 py-3 flex gap-6 items-center shadow-2xl">
+            <a href="#hero" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-home text-xl"></i></a>
+            <a href="#gallery" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-images text-xl"></i></a>
+            <a href="#shayari" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-heart text-xl"></i></a>
+            <a href="#birthday" class="nav-item text-white/70 hover:text-pink-400"><i class="fas fa-gift text-xl"></i></a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen flex flex-col items-center justify-center text-center px-6 relative">
+            <div class="z-10 mb-20">
+                <h2 id="typewriter" class="text-2xl md:text-5xl font-light mb-6 min-h-[3.5rem] leading-relaxed"></h2>
+                <div class="mt-4">
+                    <p class="cursive text-6xl md:text-8xl text-pink-500 opacity-0 animate-[fadeIn_2s_ease_forwards_1.5s] text-glow">Resham</p>
+                    <p class="text-pink-300/60 tracking-[0.3em] uppercase text-xs mt-2 opacity-0 animate-[fadeIn_2s_ease_forwards_2s]">Forever Mine</p>
+                </div>
+            </div>
+            <!-- Dynamic Blobs -->
+            <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-80 h-80 bg-pink-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="gallery" class="py-20 px-4">
+            <h2 class="text-3xl text-center mb-10 text-glow font-light">Captured Moments</h2>
+            <div class="swiper gallerySwiper pb-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi1.jpg" alt="Suggi 1">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">Purest Soul ✨</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi2.jpg" alt="Suggi 2">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">My favorite smile 😍</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi3.jpg" alt="Suggi 3">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">My happiness ❤️</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi4.jpg" alt="Suggi 4">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">The way you look...</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi5.jpg" alt="Suggi 5">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">MY Lab Lab</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi6.jpg" alt="Suggi 6">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">lab lab</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi7.jpg" alt="Suggi 7">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">Hehehe</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi8.jpg" alt="Suggi 8">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi9.jpg" alt="Suggi 9">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi10.jpg" alt="Suggi 10">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi11.jpg" alt="Suggi 11">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi12.jpg" alt="Suggi 12">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi13.jpg" alt="Suggi 13">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">Monkey suggi</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi14.jpg" alt="Suggi 14">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image-slide px-4">
+                        <div class="glass-card p-2">
+                            <img src="image/suggi15.jpg" alt="Suggi 15">
+                            <p class="text-center py-4 text-pink-300 cursive text-2xl">Mehnati suggi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination !-bottom-2"></div>
+            </div>
+        </section>
+
+        <!-- Shayari Section -->
+        <section id="shayari" class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-pink-950/10 to-transparent"></div>
+            <div class="max-w-md mx-auto px-8 text-center relative z-10">
+                <div class="mb-6 opacity-40"><i class="fas fa-quote-left text-3xl"></i></div>
+                <div class="swiper shayariSwiper h-[340px] md:h-[250px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex items-center justify-center px-2">
+                            <h3 class="cursive text-3xl md:text-5xl leading-tight text-pink-100">"Teri hasi meri pehchaan hai,<br>Tu hi meri zindagi ki jaan hai,<br>Tere bina kuch bhi adhura sa lagta hai,<br>Tu mile toh lagta hai sab kuch aasaan hai ❤️"</h3>
+                        </div>
+                        <div class="swiper-slide flex items-center justify-center px-2">
+                            <h3 class="cursive text-3xl md:text-5xl leading-tight text-pink-100">"Tujhse hi shuru meri har baat hoti hai,<br>Tujhpe hi khatam meri har raat hoti hai,<br>Na jaane kya jaadu hai tere pyaar mein,<br>Har dhadkan mein sirf teri hi yaad hoti hai 💖"</h3>
+                        </div>
+                        <div class="swiper-slide flex items-center justify-center px-2">
+                            <h3 class="cursive text-3xl md:text-5xl leading-tight text-pink-100">"Tu paas ho toh har pal khaas lagta hai,<br>Tere bina sab kuch udaas lagta hai,<br>Tu meri aadat ban chuki hai itni,<br>Ki tu na ho toh saans lena bhi bekaar lagta hai ❤️"</h3>
+                        </div>
+                        <div class="swiper-slide flex items-center justify-center px-2">
+                            <h3 class="cursive text-3xl md:text-5xl leading-tight text-pink-100">"Teri aankhon mein kuch baat hai,<br>Jo dil ko chhoo jaati hai,<br>Tujhe dekhte hi ye duniya,<br>Kahin peeche reh jaati hai 💕"</h3>
+                        </div>
+                        <div class="swiper-slide flex items-center justify-center px-2">
+                            <h3 class="cursive text-3xl md:text-5xl leading-tight text-pink-100">"Na chaand ki chahat hai, na taaron ki farmaish,<br>Bas tu mile har janam, yahi meri khwahish,<br>Tu hi meri duniya, tu hi mera sukoon,<br>Tere bina adhura hoon main, tu hi meri rooh ❤️"</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-center gap-6">
+                    <i class="fas fa-heart text-pink-500 animate-pulse"></i>
+                    <i class="fas fa-heart text-pink-400 animate-pulse [animation-delay:0.3s]"></i>
+                    <i class="fas fa-heart text-pink-600 animate-pulse [animation-delay:0.6s]"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why I Love You Section -->
+        <section class="py-20 px-6">
+            <h2 class="text-2xl font-light text-center mb-10 tracking-widest text-pink-200">WHY I LOVE YOU</h2>
+            <div class="space-y-6 max-w-sm mx-auto">
+                <div class="reveal-card glass-card p-6 flex gap-5 items-start">
+                    <div class="bg-pink-500/20 p-3 rounded-full text-pink-400"><i class="fas fa-star"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-pink-100">You make life beautiful</h4>
+                        <p class="text-sm text-gray-400 mt-1">Every moment feels like a beautiful dream with you.</p>
+                    </div>
+                </div>
+                <div class="reveal-card glass-card p-6 flex gap-5 items-start">
+                    <div class="bg-purple-500/20 p-3 rounded-full text-purple-400"><i class="fas fa-leaf"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-pink-100">You are my peace</h4>
+                        <p class="text-sm text-gray-400 mt-1">In this noisy world, your voice is my favorite melody.</p>
+                    </div>
+                </div>
+                <div class="reveal-card glass-card p-6 flex gap-5 items-start">
+                    <div class="bg-pink-500/20 p-3 rounded-full text-pink-400"><i class="fas fa-infinity"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-pink-100">The way you care</h4>
+                        <p class="text-sm text-gray-400 mt-1">Your kindness makes me fall in love with you every single day.</p>
+                    </div>
+                </div>
+                <div class="reveal-card glass-card p-6 flex gap-5 items-start">
+                    <div class="bg-purple-500/20 p-3 rounded-full text-purple-400"><i class="fas fa-shield-heart"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-pink-100">I feel confident because of you</h4>
+                        <p class="text-sm text-gray-400 mt-1">Your love gives me strength and makes me believe in myself more every day.</p>
+                    </div>
+                </div>
+                <div class="reveal-card glass-card p-6 flex gap-5 items-start">
+                    <div class="bg-pink-500/20 p-3 rounded-full text-pink-400"><i class="fas fa-face-smile"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-pink-100">You are the reason I feel no tension</h4>
+                        <p class="text-sm text-gray-400 mt-1">With you beside me, I stop worrying about my future and start feeling safe.</p>
+                    </div>
+                </div>
+                <div class="reveal-card glass-card p-6 flex gap-5 items-start">
+                    <div class="bg-purple-500/20 p-3 rounded-full text-purple-400"><i class="fas fa-palette"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-pink-100">You are the color in my black and white life</h4>
+                        <p class="text-sm text-gray-400 mt-1">You filled my ordinary world with warmth, beauty, and meaning.</p>
+                    </div>
+                </div>
+                <div class="reveal-card glass-card p-6 flex gap-5 items-start">
+                    <div class="bg-pink-500/20 p-3 rounded-full text-pink-400"><i class="fas fa-crown"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-pink-100">You are my proud Suggi</h4>
+                        <p class="text-sm text-gray-400 mt-1">I feel proud of you, proud to love you, and proud to call you mine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Birthday Section -->
+        <section id="birthday" class="py-32 text-center px-6">
+            <div class="glass-card py-20 px-6 relative overflow-hidden border-pink-500/30">
+                <div class="z-10 relative">
+                    <div class="mb-4 text-pink-500 text-3xl"><i class="fas fa-cake-candles"></i></div>
+                    <h2 class="text-5xl cursive text-pink-500 text-glow mb-4">Happy Birthday</h2>
+                    <h3 class="text-4xl font-bold mb-8 tracking-tighter text-white">MY SUGGI ❤️</h3>
+                    
+                    <button id="secret-btn" class="w-full max-w-xs bg-gradient-to-r from-pink-600 to-purple-700 py-4 rounded-full font-semibold shadow-xl shadow-pink-600/20 active:scale-95 transition-all text-lg">
+                        Click here for a secret 💌
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="pt-10 pb-28 text-center text-gray-600 text-xs tracking-widest uppercase">
+            Designed for Suggi | 2026
+        </footer>
+    </div>
+
+    <!-- Secret Message Modal -->
+    <div id="secret-modal" class="fixed inset-0 z-[110] hidden-modal flex items-center justify-center p-6 bg-black/90 backdrop-blur-xl">
+        <div class="glass-card max-w-sm w-full p-10 text-center relative border-pink-400/30 shadow-[0_0_50px_rgba(255,77,109,0.2)]">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 p-2"><i class="fas fa-times text-xl"></i></button>
+            <div class="text-pink-500 text-5xl mb-6"><i class="fas fa-envelope-open-heart"></i></div>
+            <p class="text-2xl cursive leading-relaxed text-pink-50">
+                "No matter what happens, no matter where life takes us, I will always choose you. Over and over again. Without a pause, without a doubt, in a heartbeat. I'll keep choosing you."
+            </p>
+            <div class="mt-8 text-pink-500 font-bold tracking-widest text-sm">— Forever Yours —</div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+

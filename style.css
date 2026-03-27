@@ -1,0 +1,125 @@
+:root {
+            --primary: #ff4d6d;
+            --secondary: #9d4edd;
+            --dark: #0a0a0a;
+        }
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark);
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .cursive {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* Background Gradient - Deeper for OLED/High Contrast screens like Oppo A78 */
+        .bg-romantic {
+            background: radial-gradient(circle at center, #2d0b3a 0%, #130620 60%, #050505 100%);
+        }
+
+        /* Falling Hearts Animation */
+        .heart-particle {
+            position: fixed;
+            pointer-events: none;
+            z-index: 50;
+            animation: heartRain 6s linear forwards;
+            opacity: 0;
+        }
+
+        @keyframes heartRain {
+            0% { transform: translateY(-12vh) translateX(0) scale(0.7) rotate(0deg); opacity: 0; }
+            15% { opacity: 0.75; }
+            85% { opacity: 0.75; }
+            100% { transform: translateY(110vh) translateX(20px) scale(1) rotate(240deg); opacity: 0; }
+        }
+
+        /* Gift Box Animation - Enhanced for Mobile */
+        .gift-box {
+            animation: heartBeat 1.5s ease-in-out infinite;
+            cursor: pointer;
+            filter: drop-shadow(0 0 20px var(--primary));
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.1); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+        }
+
+        /* Glow Effects */
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 77, 109, 0.8), 0 0 20px rgba(255, 77, 109, 0.4);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        /* Custom Scrollbar (Hidden for Mobile cleaner look) */
+        ::-webkit-scrollbar { display: none; }
+
+        #main-content { display: none; opacity: 0; transition: opacity 1s ease-in; }
+
+        .image-slide img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .gallerySwiper .swiper-slide p {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallerySwiper .swiper-slide-active p {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Typewriter Cursor */
+        .typewriter::after {
+            content: "|";
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        .hidden-modal {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .show-modal {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Floating Nav for Mobile */
+        .nav-item {
+            padding: 12px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        .nav-item:active {
+            background: rgba(255, 77, 109, 0.2);
+            transform: scale(0.9);
+        }
