@@ -163,3 +163,52 @@ Feel free to fork and contribute!
 ## 📄 License
 
 This project is for educational purposes.
+
+## 📂 Project Structure
+
+```
+library_project/
+│
+├── frontend/                 # React Frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/       # Reusable components (Navbar, PrivateRoute)
+│   │   ├── pages/            # All pages (Login, Signup, Dashboard, etc.)
+│   │   ├── services/         # API calls (axios)
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── styles/
+│   │
+│   ├── package.json
+│   ├── vite.config.js
+│   └── .env
+│
+├── backend/                  # Node.js + Express Backend
+│   ├── config/               # DB connection (db.js)
+│   ├── controllers/          # Business logic
+│   ├── routes/               # API routes
+│   ├── middleware/           # Auth, upload, etc.
+│   ├── models/               # DB queries / schema logic
+│   ├── uploads/              # Uploaded files (images/docs)
+│   ├── utils/                # Helper functions
+│   ├── server.js             # Main server file
+│   ├── package.json
+│   └── .env
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 📌 Important Folders Explained
+
+* **frontend/** → React UI (what user sees)
+* **backend/** → Express server (API + logic)
+* **config/** → Database connection (MySQL)
+* **controllers/** → Handles request logic
+* **routes/** → API endpoints
+* **middleware/** → Auth, file upload, etc.
+* **models/** → Database queries
+* **uploads/** → Stored user files
+
